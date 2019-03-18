@@ -35,6 +35,10 @@ document.querySelector(`.startButton`).addEventListener(`click`, () => {
     },1000/4)
 });
 
+function clearTimer() {
+    window.clearInterval()
+}
+
 function game(table, direction) {
     let xSpeed
     let ySpeed
@@ -59,6 +63,7 @@ function game(table, direction) {
     snake[0].y += ySpeed
 
    if(snake[0].x < 0 || snake[0].y > 8 || snake[0].y < 0 || snake[0].x > 8 || table[snake[0].y][snake[0].x] === 1) {
+       clearTimer()
        alert(`Game Over! Final score is ${score}`)
    } else {
        table[snake[0].y][snake[0].x] = 1;
@@ -77,7 +82,7 @@ function draw(table) {
     for (let i = 0; i < table.length; i++) {
         for (let j = 0; j < table.length; j++) {
             if (table[i][j] === 0) {
-                document.querySelector(`.pos${i}${j}`).style.backgroundColor = `black`
+                document.querySelector(`.pos${i}${j}`).style.backgroundColor = `coral`
                 document.querySelector(`.pos${i}${j}`).style.borderRadius = `0px`
             } else if (table[i][j] === 2) {
                 document.querySelector(`.pos${i}${j}`).style.backgroundColor = `red`
@@ -93,5 +98,9 @@ function draw(table) {
 function generateFruit(table) {
     fruitX = Math.floor((Math.random() * 8) + 0)
     fruitY = Math.floor((Math.random() * 8) + 0)
+    while(table[fruitX][fruitY] === 1) {
+        fruitX = Math.floor((Math.random() * 8) + 0)
+        fruitY = Math.floor((Math.random() * 8) + 0)
+    }
     table[fruitY][fruitX] = 2
 }
