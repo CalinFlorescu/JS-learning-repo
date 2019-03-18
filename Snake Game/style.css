@@ -10,18 +10,18 @@
 .score {
     position: absolute;
     top: 100px;
-    left: 890px;
+    left: 980px;
     width: 100px;
     height: 500px;
     font-size: 30px;
     text-align: center;
     font-family: "Bernard MT Condensed";
-    background-color: red;
+    background-color: blanchedalmond;
 }
 
 .header {
     position: absolute;
-    left: 40%;
+    left: 38%;
     top: 50px;
     color: green;
     font-size: 35px;
