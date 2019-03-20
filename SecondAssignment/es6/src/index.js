@@ -123,35 +123,36 @@ promise.then(() => {console.log(`Haloe`)});*/
 
 //Async Await
 
-const { once } = require('events');
-const { createReadStream } = require('fs');
-const { createInterface } = require('readline');
+const fs = require('fs');
+const readline = require('readline');
 
-var i = 0;
 
-(async function processLineByLine() {
-    try {
-        const rl = createInterface({
-            input: createReadStream(`text.txt.txt`),
-            crlfDelay: Infinity
-        });
+(async function readFromLine() {
+    async function asyncReadLine(filename) {
+        return new Promise ((resolved,rejected) => {
+                let string = [];
+                const rl = readline.createInterface({
+                    input: fs.createReadStream(filename),
+                    crlfDelay: Infinity
+                });
 
-        let strings = [];
-
-        rl.on('line', (line) => {
-            strings[i] = line;
-            i++;
-        });
-
-        await once(rl, 'close');
-
-        console.log('File processed.');
-    } catch (err) {
-        console.error(err);
+                rl.on('line', (line) => {
+                    string.push(line);
+                });
+                rl.on('close', () => {
+                    resolved(string);
+                });
+            }
+        )
     }
 
-    await console.log(strings);
-
+    (await asyncReadLine(`big-file.txt`)).forEach(line => {
+        console.log(line);
+    })
 })();
+
+
+
+
 
 
