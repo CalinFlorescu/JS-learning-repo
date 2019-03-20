@@ -1,4 +1,5 @@
 import MyPromise from './MyPromise';
+import MyValidator from './MyValidator';
 
 //
 // const promiseTest = () => {
@@ -123,7 +124,7 @@ promise.then(() => {console.log(`Haloe`)});*/
 
 //Async Await
 
-const fs = require('fs');
+/*const fs = require('fs');
 const readline = require('readline');
 
 
@@ -149,7 +150,16 @@ const readline = require('readline');
     (await asyncReadLine(`big-file.txt`)).forEach(line => {
         console.log(line);
     })
-})();
+})();*/
+
+// Errors
+
+const element = new MyValidator('0');
+
+element.isNumber();
+
+
+
 
 
 
