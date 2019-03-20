@@ -1,0 +1,791 @@
+.main {
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
+
+.score {
+    position: absolute;
+    top: 100px;
+    left: 980px;
+    width: 100px;
+    height: 500px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Bernard MT Condensed";
+    background-color: blanchedalmond;
+}
+
+.header {
+    position: absolute;
+    left: 38%;
+    top: 50px;
+    color: green;
+    font-size: 35px;
+    font-family: "Bernard MT Condensed";
+}
+
+.startButton {
+    position: absolute;
+    left: 15px;
+    width: 70px;
+    height: 30px;
+    top: 400px;
+    font-family: "Bernard MT Condensed";
+    border-radius: 10px;
+}
+
+.score-value {
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    font-size: 25px;
+}
+
+.pos00 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos01 {
+    position: absolute;
+    top: 50px;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos02 {
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos03 {
+    position: absolute;
+    top: 50px;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos04 {
+    position: absolute;
+    top: 50px;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos05 {
+    position: absolute;
+    top: 50px;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos06 {
+    position: absolute;
+    top: 50px;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos07 {
+    position: absolute;
+    top: 50px;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos08 {
+    position: absolute;
+    top: 50px;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 2nd Row */
+
+.pos10 {
+    position: absolute;
+    top: 85px;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos11 {
+    position: absolute;
+    top: 85px;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos12 {
+    position: absolute;
+    top: 85px;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos13 {
+    position: absolute;
+    top: 85px;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos14 {
+    position: absolute;
+    top: 85px;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos15 {
+    position: absolute;
+    top: 85px;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos16 {
+    position: absolute;
+    top: 85px;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos17 {
+    position: absolute;
+    top: 85px;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos18 {
+    position: absolute;
+    top: 85px;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 3rd row */
+
+.pos20 {
+    position: absolute;
+    top: 120px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos21 {
+    position: absolute;
+    top: 120px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos22 {
+    position: absolute;
+    top: 120px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos23 {
+    position: absolute;
+    top: 120px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos24 {
+    position: absolute;
+    top: 120px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos25 {
+    position: absolute;
+    top: 120px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos26 {
+    position: absolute;
+    top: 120px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos27 {
+    position: absolute;
+    top: 120px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos28 {
+    position: absolute;
+    top: 120px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 4th row */
+
+.pos30 {
+    position: absolute;
+    top: 155px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos31 {
+    position: absolute;
+    top: 155px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos32 {
+    position: absolute;
+    top: 155px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos33 {
+    position: absolute;
+    top: 155px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos34 {
+    position: absolute;
+    top: 155px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos35 {
+    position: absolute;
+    top: 155px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos36 {
+    position: absolute;
+    top: 155px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos37 {
+    position: absolute;
+    top: 155px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos38 {
+    position: absolute;
+    top: 155px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 5th row */
+
+.pos40 {
+    position: absolute;
+    top: 190px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos41 {
+    position: absolute;
+    top: 190px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos42 {
+    position: absolute;
+    top: 190px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos43 {
+    position: absolute;
+    top: 190px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos44 {
+    position: absolute;
+    top: 190px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos45 {
+    position: absolute;
+    top: 190px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos46 {
+    position: absolute;
+    top: 190px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos47 {
+    position: absolute;
+    top: 190px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos48 {
+    position: absolute;
+    top: 190px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 6th row */
+
+.pos50 {
+    position: absolute;
+    top: 225px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos51 {
+    position: absolute;
+    top: 225px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos52 {
+    position: absolute;
+    top: 225px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos53 {
+    position: absolute;
+    top: 225px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos54 {
+    position: absolute;
+    top: 225px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos55 {
+    position: absolute;
+    top: 225px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos56 {
+    position: absolute;
+    top: 225px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos57 {
+    position: absolute;
+    top: 225px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos58 {
+    position: absolute;
+    top: 225px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 7th row */
+
+.pos60 {
+    position: absolute;
+    top: 260px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos61 {
+    position: absolute;
+    top: 260px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos62 {
+    position: absolute;
+    top: 260px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos63 {
+    position: absolute;
+    top: 260px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos64 {
+    position: absolute;
+    top: 260px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos65 {
+    position: absolute;
+    top: 260px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos66 {
+    position: absolute;
+    top: 260px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos67 {
+    position: absolute;
+    top: 260px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos68 {
+    position: absolute;
+    top: 260px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 8th row */
+
+.pos70 {
+    position: absolute;
+    top: 295px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos71 {
+    position: absolute;
+    top: 295px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos72 {
+    position: absolute;
+    top: 295px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos73 {
+    position: absolute;
+    top: 295px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos74 {
+    position: absolute;
+    top: 295px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos75 {
+    position: absolute;
+    top: 295px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos76 {
+    position: absolute;
+    top: 295px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos77 {
+    position: absolute;
+    top: 295px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos78 {
+    position: absolute;
+    top: 295px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+/* 9th row */
+
+.pos80 {
+    position: absolute;
+    top: 330px;;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos81 {
+    position: absolute;
+    top: 330px;;
+    left: 135px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos82 {
+    position: absolute;
+    top: 330px;;
+    left: 170px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos83 {
+    position: absolute;
+    top: 330px;;
+    left: 205px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos84 {
+    position: absolute;
+    top: 330px;;
+    left: 240px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos85 {
+    position: absolute;
+    top: 330px;;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos86 {
+    position: absolute;
+    top: 330px;;
+    left: 310px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos87 {
+    position: absolute;
+    top: 330px;;
+    left: 345px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.pos88 {
+    position: absolute;
+    top: 330px;;
+    left: 380px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
