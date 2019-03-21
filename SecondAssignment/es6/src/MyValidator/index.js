@@ -31,7 +31,7 @@ class NotString extends Error {
     constructor() {
         super();
         console.log(`This is not a string`);
-        // throw new Error(`This is not a string`);
+        //throw new Error(`This is not a string`);
     }
 }
 
@@ -62,9 +62,10 @@ class MyValidator extends (NotUndefinedError, NotNullError, NotNumber, NotHasLen
             throw new NotUndefinedError();
         } else if(value instanceof Function) {
             throw new Error(`You must not insert functions as parameter`);
+        } else {
+            super(value);
+            this.value = value;
         }
-        super(value);
-        this.value = value;
     }
 
     isNumber() {
@@ -84,7 +85,7 @@ class MyValidator extends (NotUndefinedError, NotNullError, NotNumber, NotHasLen
 
     isLessThan(value) {
         if(this.value < value) {
-            return this
+            return this;
         } else {
             throw new NotLessThan(value);
         }
@@ -99,7 +100,7 @@ class MyValidator extends (NotUndefinedError, NotNullError, NotNumber, NotHasLen
     }
 
     hasLengthGreaterThan(value) {
-        if(this.isString().value.length > value) {
+        if(this.value.length > value) {
             return this;
         } else {
             throw new NotHasLengthGreater(value);
@@ -107,7 +108,7 @@ class MyValidator extends (NotUndefinedError, NotNullError, NotNumber, NotHasLen
     }
 
     hasLengthLessThan(value) {
-        if(this.isString().value.length > value) {
+        if(this.value.length > value) {
             return this;
         } else {
             throw new NotHasLengthShorter(value);

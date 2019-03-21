@@ -29,14 +29,15 @@ import MyValidator from './MyValidator';
 // // asyncTest();
 //
 
-/*import fetch from 'node-fetch';
+import fetch from 'node-fetch';
 
 const body = {text: 'test'};
 fetch('http://localhost:3000/note', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(body),
-}).then(r => r.json()).then(console.log).catch(e => console.log(e));*/
+}).then(r => r.json()).then(console.log).catch(e => console.log(e));
+
 
 // My forEach
 
@@ -154,9 +155,13 @@ const readline = require('readline');
 
 // Errors
 
-const element = new MyValidator('0');
+/*const element = new MyValidator('0');
 
-element.isNumber();
+element.isNumber();*/
+
+// Fetch
+
+
 
 
 

@@ -11,7 +11,8 @@ class MyPromise extends Promise{
 
     catch(onrejected) {
         console.log(`This is a new catch`);
-        return returnValue = super.catch(onrejected);
+        const value = super.catch(onrejected);
+        return super.catch(onrejected);
     }
 
     static all = (arr) => {
