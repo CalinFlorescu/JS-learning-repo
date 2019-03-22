@@ -1,29 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './inde.css';
+import App from './state-components/App.js'
 
-
-function Buttons(props) {
-    return (
-        <div className="buttons">
-            <button className="delButton" onClick={props.deleteTask}>Delete</button>
-            <button className="editButton" onClick={props.editTask}>Edit</button>
-        </div>
-    );
-}
-
-function Task(props) {
-    return (
-        <div>
-            <li key={props.index} className="task">
-                {props.name}
-            </li>
-            <Buttons deleteTask={props.deleteTask} editTask={props.editTask}/>
-        </div>
-    )
-}
-
-class App extends React.Component {
+/*class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,9 +22,9 @@ class App extends React.Component {
         this.setState({todo: aux});
     };
 
-    deleteTask = () => {
+    deleteTask = (index) => {
         const {tasks} = this.state;
-        tasks.splice(1,1);
+        tasks.splice(index,1);
         this.setState({
             tasks
         });
@@ -74,7 +53,7 @@ class App extends React.Component {
                                             <Task
                                                 index={this.state.tasks.length === 0 ? 0 : index}
                                                 name={item}
-                                                deleteTask={this.deleteTask}
+                                                deleteTask={()=> this.deleteTask(index)}
                                                 editTask={this.editTask}
                                             />
                                         );
@@ -87,5 +66,5 @@ class App extends React.Component {
         );
 
     }
-};
+};*/
 ReactDOM.render(<App/>, document.getElementById("root"));
