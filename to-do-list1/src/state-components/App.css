@@ -32,14 +32,6 @@ body {
     border-radius: 10px;
 }
 
-li {
-    list-style-type: none;
-}
-
-.task {
-    font-size: 35px;
-}
-
 .actualList {
     position: absolute;
     background-color: white;
@@ -47,8 +39,4 @@ li {
     top: 30%;
     left: 36%;
     height: 600px;
-}
-
-.buttons {
-
 }
