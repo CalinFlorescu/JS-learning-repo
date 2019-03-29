@@ -7,12 +7,12 @@ import Exercises from './Exerciser'
 
 export default class App extends React.Component {
   render() {
-    return <Fragment>
+    return <div style={{height: '100vh'}}>
       <Header />
 
       <Exercises />
 
       <Footer />
-    </Fragment>
+    </div>
   }
 }
