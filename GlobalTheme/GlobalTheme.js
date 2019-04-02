@@ -48,7 +48,7 @@ const typography = {
     letterSpacing: "-0.64px",
     lineHeight: "18px",
     fontSize: "112px",
-    fontWeight: 300
+    fontWeight: 400
   },
   fontWeightRegular: 400,
   display1: {
@@ -95,6 +95,13 @@ const typography = {
     lineHeight: "24",
     fontSize: "16px",
     fontWeight: 400
+  },
+  heading: {
+    color: "#000000",
+    fontFamily: "Lato / sans-serif",
+    lineHeight: "24",
+    fontSize: "34px",
+    fontWeight: 900
   },
   body1: {
     color: "#000000",
