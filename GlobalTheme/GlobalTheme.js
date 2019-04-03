@@ -48,7 +48,7 @@ const typography = {
     letterSpacing: "-0.64px",
     lineHeight: "18px",
     fontSize: "112px",
-    fontWeight: 300
+    fontWeight: 400
   },
   fontWeightRegular: 400,
   display1: {
@@ -96,6 +96,13 @@ const typography = {
     fontSize: "16px",
     fontWeight: 400
   },
+  heading: {
+    color: "#000000",
+    fontFamily: "Lato / sans-serif",
+    lineHeight: "24",
+    fontSize: "34px",
+    fontWeight: 900
+  },
   body1: {
     color: "#000000",
     fontFamily: "Lato / sans-serif",
@@ -105,4 +112,10 @@ const typography = {
   }
 };
 
-export const theme = createMuiTheme({ palette, typography });
+export const images = {
+  logo: "https://www.arobs.com/wp-content/uploads/2018/11/logo.png",
+  background:
+    "https://www.arobs.com/wp-content/uploads/2018/12/AROBS_website_slider_glob_1920x768.png"
+};
+
+export const theme = createMuiTheme({ palette, typography, images });
